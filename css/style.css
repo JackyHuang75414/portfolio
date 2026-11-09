@@ -121,7 +121,7 @@ img { display: block; width: 100%; height: auto; }
 /* ---------------------------------------------------------------- Hero */
 .hero {
   padding: var(--s120) var(--gutter) var(--s96);
-  background: #000000 url(assets/background.png) center / cover no-repeat;
+  background: #000000 url(../assets/background.png) center / cover no-repeat;
   color: #ffffff;
 }
 .hero__inner {
