@@ -60,8 +60,8 @@
       count: 7
     },
     works: {
-      title: '\u65E9\u671F\u4F5C\u54C1\u96C6',
-      category: 'Early Works — Branding · UI · Illustration',
+      title: 'Early Works',
+      category: 'Branding · UI · Illustration',
       description:
         'A curated collection of early design and illustration works spanning branding, UI design, illustration and print.',
       count: 34
