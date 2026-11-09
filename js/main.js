@@ -120,27 +120,31 @@
     });
   });
 
-  modalClose.addEventListener('click', closeProject);
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal) closeProject();
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeProject();
-  });
+  if (modal) {
+    modalClose.addEventListener('click', closeProject);
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) closeProject();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeProject();
+    });
+  }
 
   // ------------------------------------------------------------------
   // Mobile nav toggle
   // ------------------------------------------------------------------
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function () {
-    navLinks.classList.toggle('is-open');
-  });
-  navLinks.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      navLinks.classList.remove('is-open');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('is-open');
     });
-  });
+    navLinks.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+      });
+    });
+  }
 
   // ------------------------------------------------------------------
   // Scroll reveal

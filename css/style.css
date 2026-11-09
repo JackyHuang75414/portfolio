@@ -98,6 +98,7 @@ img { display: block; width: 100%; height: auto; }
   transition: color 0.18s ease;
 }
 .nav__links a:hover { color: var(--ink); }
+.nav__links a.is-active { color: var(--ink); }
 
 .nav__toggle {
   display: none;
@@ -187,6 +188,25 @@ img { display: block; width: 100%; height: auto; }
 }
 .hero__scroll span { transition: transform 0.18s ease; }
 .hero__scroll:hover span { transform: translateY(6px); }
+
+/* ---------------------------------------------------------------- Page head */
+.page-head {
+  padding: var(--s96) var(--gutter) var(--s48);
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.page-head h1 {
+  font-size: clamp(60px, 10vw, 120px);
+  font-weight: var(--fw-black);
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+.page-head__sub {
+  margin-top: var(--s24);
+  max-width: 720px;
+  font-size: 18px;
+  color: var(--muted);
+}
 
 /* ---------------------------------------------------------------- Section */
 .section {
