@@ -6,33 +6,44 @@
   // Project data (images live under /assets/<slug>/N.jpg)
   // ------------------------------------------------------------------
   var projects = {
+    artex: {
+      title: 'ArtEx',
+      category: 'Full-Stack Web App — Fractional Art Trading',
+      description:
+        'An end-to-end digital-art trading platform (POC) with fractional ownership and 1\u201350\u00D7 leveraged perpetual futures. Features a Virtual Market Maker pricing engine (Geometric Brownian Motion, SSE streaming) and DeepSeek AI for a conversational art curator and an autonomous trading agent.',
+      count: 2,
+      links: [
+        { label: 'Launch ArtEx', href: 'artex/' },
+        { label: 'GitHub', href: 'https://github.com/JackyHuang75414/Innovation_project_Digital_Art_Paintings' }
+      ]
+    },
     tagwalk: {
       title: 'Tagwalk',
       category: 'UX / UI Design — AI Fashion Search Engine',
       description:
         'Deeply involved in constructing convolutional neural network AI systems for a fashion search engine, gathering client feedback from LVMH, Kering and Richemont and implementing customised iterations. Revamped the app user flow and established an online user community, driving a 34% increase in user-generated posts. Named one of TIME\u2019s Best Inventions of 2025 with exclusive coverage in Vogue.',
-      count: 2
+      count: 12
     },
     rabbit: {
       title: 'Year of the Rabbit',
       category: 'Campaign & Game Design — ECENTIME New Year',
       description:
         'Large-scale online game for the 2023 ECENTIME New Year event, \u201CA Prosperous Year of the Rabbit\u201D. The full development process from initial sketching to independent execution \u2014 gameplay flowcharts, chibi-style characters, interface prototypes, UI design, animation design, and the promotional video and animated advertisements for the event\u2019s later stages.',
-      count: 10
+      count: 13
     },
     onboarding: {
       title: 'App Onboarding',
       category: 'UI Design — Mobile Onboarding Flow',
       description:
         'Interface and onboarding flow design for a mobile application, guiding new users from first launch through account setup and first value.',
-      count: 3
+      count: 9
     },
     tinyplanet: {
       title: 'Tiny Planet',
       category: 'Illustration — Series',
       description:
         'A series of tiny planet illustrations exploring surreal, self-contained worlds.',
-      count: 3
+      count: 12
     },
     banknote: {
       title: 'Banknote Redesign',
@@ -74,6 +85,7 @@
   var modalDesc = document.getElementById('modalDesc');
   var modalCount = document.getElementById('modalCount');
   var modalGallery = document.getElementById('modalGallery');
+  var modalLinks = document.getElementById('modalLinks');
   var modalClose = document.getElementById('modalClose');
 
   function openProject(slug) {
@@ -84,6 +96,19 @@
     modalHeading.textContent = p.title;
     modalDesc.textContent = p.description;
     modalGallery.innerHTML = '';
+    modalLinks.innerHTML = '';
+
+    if (p.links && p.links.length) {
+      p.links.forEach(function (link) {
+        var a = document.createElement('a');
+        a.href = link.href;
+        a.className = 'btn btn--ghost';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = link.label + ' \u2197';
+        modalLinks.appendChild(a);
+      });
+    }
 
     var i;
     for (i = 1; i <= p.count; i++) {

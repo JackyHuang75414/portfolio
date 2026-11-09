@@ -30,21 +30,23 @@
   <main>
     <!-- ============================================================ HERO -->
     <section class="hero" id="top">
-      <p class="hero__eyebrow">UX Designer &amp; Web Developer — Paris, France</p>
-      <h1 class="hero__name">Yuhao<br />Huang</h1>
-      <p class="hero__tagline">
-        I design and build human-centred digital products — from brand and interface
-        design to production-grade web applications. Previously at Tagwalk, ECENTIME
-        and Huawei, now crafting AI-native tools and trading platforms.
-      </p>
-      <div class="hero__links">
-        <a href="mailto:huang199864@gmail.com">Email</a>
-        <a href="https://www.behance.net/huang19986b513" target="_blank" rel="noopener">Behance</a>
-        <a href="https://github.com/JackyHuang75414" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/jacky-huang-5822a321b" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="assets/Yuhao-Huang_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">UX Designer &amp; Web Developer — Paris, France</p>
+        <h1 class="hero__name">Yuhao<br />Huang</h1>
+        <p class="hero__tagline">
+          I design and build human-centred digital products — from brand and interface
+          design to production-grade web applications. Previously at Tagwalk, ECENTIME
+          and Huawei, now crafting AI-native tools and trading platforms.
+        </p>
+        <div class="hero__links">
+          <a href="mailto:huang199864@gmail.com">Email</a>
+          <a href="https://www.behance.net/huang19986b513" target="_blank" rel="noopener">Behance</a>
+          <a href="https://github.com/JackyHuang75414" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jacky-huang-5822a321b" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="assets/Yuhao-Huang_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <a class="hero__scroll" href="#work">View work <span>↓</span></a>
       </div>
-      <a class="hero__scroll" href="#work">View work <span>↓</span></a>
     </section>
 
     <!-- ============================================================ WORK -->
@@ -53,34 +55,6 @@
         <h2>Selected Work</h2>
         <span class="section__index">01 — 10 Projects</span>
       </div>
-
-      <!-- ArtEx — full-stack web product (distinct treatment) -->
-      <article class="featured grid--featured reveal">
-        <div class="featured__media">
-          <img src="assets/artex/cover.jpg" alt="ArtEx — fractional art trading platform" loading="lazy" />
-        </div>
-        <div class="featured__body">
-          <span class="badge">Live Web App</span>
-          <h3 class="featured__title">ArtEx</h3>
-          <p class="featured__desc">
-            An end-to-end digital-art trading platform with fractional ownership and
-            1–50× leveraged perpetual futures — delivered from scratch in one academic
-            year with zero infrastructure budget.
-          </p>
-          <div class="chips">
-            <span class="chip">Vue 3</span>
-            <span class="chip">Vite</span>
-            <span class="chip">Tailwind</span>
-            <span class="chip">Spring Boot</span>
-            <span class="chip">SSE</span>
-            <span class="chip">DeepSeek AI</span>
-          </div>
-          <div class="featured__actions">
-            <a class="btn btn--solid" href="artex/" target="_blank" rel="noopener">Launch ArtEx ↗</a>
-            <a class="btn btn--ghost" href="https://github.com/JackyHuang75414/Innovation_project_Digital_Art_Paintings" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </article>
 
       <!-- Design & product grid -->
       <div class="grid">
@@ -173,6 +147,16 @@
             <p class="project__sub">黄禹豪作品 — Full Collection</p>
           </div>
         </article>
+
+        <!-- ArtEx -->
+        <article class="project reveal" data-project="artex">
+          <div class="project__media"><img src="assets/artex/1.jpg" alt="ArtEx — fractional art trading platform" loading="lazy" /></div>
+          <div class="project__body">
+            <span class="project__cat"><span class="dot"></span>Full-Stack Web App</span>
+            <h3 class="project__title">ArtEx</h3>
+            <p class="project__sub">Fractional Art Trading Platform</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -206,6 +190,7 @@
       <span class="cat" id="modalCat"></span>
       <h3 id="modalHeading"></h3>
       <p id="modalDesc"></p>
+      <div class="modal__links" id="modalLinks"></div>
     </div>
     <div class="modal__gallery" id="modalGallery"></div>
   </div>
