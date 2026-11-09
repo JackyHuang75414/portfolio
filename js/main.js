@@ -40,10 +40,10 @@
     },
     tinyplanet: {
       title: 'Tiny Planet',
-      category: 'Illustration — Series',
+      category: 'Illustration & Inclusive Design',
       description:
-        'A series of tiny planet illustrations exploring surreal, self-contained worlds.',
-      count: 12
+        'A series of tiny planet illustrations exploring surreal, self-contained worlds, together with the PECS visual teaching aid — a communication training tool designed for people with intellectual disabilities.',
+      count: 21
     },
     banknote: {
       title: 'Banknote Redesign',
@@ -59,18 +59,11 @@
         'Interface design for a crowd-testing (\u4F17\u6D4B) platform, covering the full product surface from discovery through task completion.',
       count: 7
     },
-    pecs: {
-      title: 'PECS Visual Teaching Aid',
-      category: 'Inclusive Design — Communication Training System',
-      description:
-        'Visual aid teaching tool based on the PECS communication training system, designed for people with intellectual disabilities to support communication and learning.',
-      count: 9
-    },
     works: {
-      title: 'Selected Works',
-      category: 'Portfolio — \u9EC4\u79B9\u8C6A\u4F5C\u54C1',
+      title: '\u65E9\u671F\u4F5C\u54C1\u96C6',
+      category: 'Early Works — Branding · UI · Illustration',
       description:
-        'A curated collection of selected design and illustration works spanning branding, UI design, illustration and inclusive design.',
+        'A curated collection of early design and illustration works spanning branding, UI design, illustration and print.',
       count: 34
     }
   };
